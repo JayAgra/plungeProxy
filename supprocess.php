@@ -31,35 +31,9 @@ include "loginconnect.php";
 
     }else{
 
-        //$sql = "SELECT * FROM logins WHERE user_name='$uname' AND password='$pass'";
-        $_sqlout = $db->querySingle("SELECT * FROM logins WHERE user_name='$uname' AND password='$pass'", true);
-        if (isset($_sqlout)) {
-            $row = $_sqlout;
+    $db->exec("INSERT INTO logins (id, user_name, password) VALUES (null, '$uname', '$pass')");
+    
+    header("Location: login.php");
 
-            if ($row['user_name'] === $uname && $row['password'] === $pass) {
-
-                echo "Logged in!";
-                $_SESSION['user_name'] = $row['user_name'];
-
-                $_SESSION['id'] = $row['id'];
-                header("Location: index.php");
-
-                exit();
-
-            }else{
-
-                header("Location: signup.php?error=Incorect User name or password");
-
-                exit();
-
-            }
-
-        }else{
-
-            header("Location: signup.php?error=Incorect User name or password");
-
-            exit();
-
-        }
-
+    exit();
     }
