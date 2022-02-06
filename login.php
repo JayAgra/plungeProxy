@@ -5,6 +5,7 @@ $errorlink = "1";
 } else {
 $errorlink = "0";
 }
+$hosturl = $_SERVER['SERVER_NAME'];
 ?>
 <!DOCTYPE html>
 
@@ -21,7 +22,9 @@ $errorlink = "0";
 <body>
      <form action="loginprocess.php" method="post">
 		<div class="main">
-		            <h2>Login to PHProxy</h2>
+		            <img src="files/img/logo.svg" width="100%"/>
+		            <h2>Login</h2>
+		            <h4>For <?php echo $hosturl ?></h4>
 		            <br>
 			<div class="form-title-row">
 			</div>
