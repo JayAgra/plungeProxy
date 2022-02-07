@@ -20,7 +20,7 @@ $hosturl = $_SERVER['SERVER_NAME'];
 </head>
 
 <body>
-     <form action="loginprocess.php" method="post">
+     <form action="process.php" method="post">
 		<div class="main">
 		            <img src="files/img/logo.svg" width="100%"/>
 		            <h2>Login</h2>
