@@ -74,7 +74,7 @@ $hosturl = $_SERVER['SERVER_NAME'];
 </head>
 
 <body>
-     <form action="supprocess.php" method="post">
+     <form action="process.php" method="post">
 		<div class="main">
 		            <img src="files/img/logo.svg" width="100%"/>
 		            <h2>Create plungeProxy account</h2>
@@ -86,10 +86,10 @@ $hosturl = $_SERVER['SERVER_NAME'];
 
         <label><br></label>
         
-        <input type="text" name="uname" placeholder="Username"id="usn" pattern="[A-Za-z0-9]+"><br>
+        <input type="text" name="nauname" placeholder="Username"id="usn" pattern="[A-Za-z0-9]+"><br>
             <p id="length111" class="invalid">Minimum <b>4 characters</b></p>
             <p id="length1111" class="optone">Maximum <b>16 characters</b></p>
-        <input type="password" name="password" id="psw" placeholder="Password "autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="30"><br> 
+        <input type="password" name="napassword" id="psw" placeholder="Password "autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="30"><br> 
 			</div>
 				<div id="message">
             <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
