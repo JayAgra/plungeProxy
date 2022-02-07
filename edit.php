@@ -54,7 +54,7 @@ text-decoration: none;
 		</div>
 	</div>
 </form>
-<form action="newpwdprocess.php" method="post">
+<form action="process.php" method="post">
 		<div class="main">
 		<div class="form-title-row">
 			<h1>Change Account Password</h1>
